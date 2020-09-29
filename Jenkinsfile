@@ -4,6 +4,7 @@ pipeline {
     stage('Install') {
       steps {
         sh 'npm install'
+        tool(name: 'NodeJS14', type: 'NodeJS')
       }
     }
 
