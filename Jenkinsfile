@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       args '-p 3000:3000'
-      image 'lts-alpine'
+      image 'node:lts-alpine'
     }
 
   }
